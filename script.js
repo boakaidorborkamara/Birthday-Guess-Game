@@ -40,7 +40,7 @@ function getIndividualBirthdayRandomly(){
     
 
     birthdate.innerHTML = Object.values(birthday_of_selected_individual);
-    person_name.innerHTML = Object.keys(birthday_of_selected_individual);
+    person_name.innerHTML = Object.keys(birthday_of_selected_individual)+"'s";
 
     
     let current_result = people_birthdays[random_index];
