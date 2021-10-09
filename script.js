@@ -38,9 +38,24 @@ function getIndividualBirthdayRandomly(){
     //display the data in the page
 
     
+    let letter = Object.keys(birthday_of_selected_individual).toString();
+    let last_letter = letter[letter.length-1];
+    console.log(last_letter);
+    
 
     birthdate.innerHTML = Object.values(birthday_of_selected_individual);
+
+    if(last_letter !== "s"){
     person_name.innerHTML = Object.keys(birthday_of_selected_individual)+"'s";
+    }
+    else
+    {
+        person_name.innerHTML = Object.keys(birthday_of_selected_individual)+"'";
+    }
+
+    
+
+    
 
     
     let current_result = people_birthdays[random_index];
