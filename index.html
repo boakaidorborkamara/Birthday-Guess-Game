@@ -9,23 +9,33 @@
 </head>
 <body>
     <div id="container">
+
+        <div class="game-name">
+            <h1>BIRTHDAY GUESS GAME</h1>
+            <p>Guess whose birthday the computer has generated.</p>
+        </div>
         <div id="wrapper">
-            <div class="game-name">
-                <h1>BIRTHDAY GUESS GAME</h1>
-                <!-- <p>Can you guess whoes birthday the computer has generate?</p> -->
-            </div>
+            
            
-            <div class="result-area">
+            <div class="result-area" id="result-area">
                 
-                <p>
-                    October 9 is Carlos Nah Birthday, yea... !
+                <p id="result">
+                    <span id="birth-date">October 9</span> is <span id="name">Carlos Nah</span> Birthday, yea... !
                 </p>
-                <button>Show Result</button>
+                
             </div>
             <div class="previous-result-area">
                 <p>Previous Results</p>
+                <p id="name-already-guess"></p>
             </div>
+
+            
         </div>
+
+        <button id="show-result">Show Result</button>
+        <button id="play-again">Play Again</button>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

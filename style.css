@@ -12,9 +12,10 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: black;
 }
 
@@ -22,25 +23,36 @@ body{
     /* background-color: black; */
     border: 1px solid white;
     width: 40%;
-    height: 60%;
+    height: 20%;
     padding: 15px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
+    background-color: cyan;
+    margin-top: 40px;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .game-name{
-    background-color: cyan;
-    width: 100%;
-    height: 20%;
+
+    width: 40%;
+    /* height: 60%; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-/* h1{
+.game-name h1{
     color: cyan;
-} */
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.game-name p{
+    color: white;
+}
 
 .result-area{
     height: 60%;
@@ -50,8 +62,13 @@ body{
     align-items: center;
 }
 
+.result-area p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 p{
-    color: white;
+    color: black
 }
 
 button{
@@ -59,4 +76,8 @@ button{
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
 }
